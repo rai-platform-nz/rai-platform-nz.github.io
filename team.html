@@ -7,12 +7,18 @@
     <title>Team - RAISE</title>
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/images/extracted/img-000.png">
 </head>
 
 <body>
     <header>
         <div class="container">
             <a href="/" class="logo">RAISE</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
@@ -36,46 +42,99 @@
                 </p>
 
                 <div class="team-section">
-                    <h2>Trustworthy Technology</h2>
-                    <ul class="team-list">
-                        <li><strong>Dr Andrew Lensen</strong> (Proposal Lead)</li>
-                        <li>Prof Michael Winikoff</li>
-                        <li>Prof Stephen Cranefield</li>
-                        <li>Prof Brendan McCane</li>
-                        <li>Prof Grant Dick</li>
-                        <li>A/Prof Hui Ma</li>
-                        <li>Dr Emily O’Riordan</li>
-                        <li>Dr Veronica Liesaputra</li>
-                        <li>Dr Caitlin Owen</li>
-                    </ul>
+                    <h2 class="team-section-title">Trustworthy Technology</h2>
+                    <div class="team-grid">
+                        <div class="team-card">
+                            <h3>Dr Andrew Lensen</h3>
+                            <div class="role">Proposal Lead</div>
+                        </div>
+                        <div class="team-card">
+                            <h3>Prof Michael Winikoff</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Prof Stephen Cranefield</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Prof Brendan McCane</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Prof Grant Dick</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>A/Prof Hui Ma</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Dr Emily O’Riordan</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Dr Veronica Liesaputra</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Dr Caitlin Owen</h3>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="team-section" style="margin-top: 2rem;">
-                    <h2>Trustworthy Frameworks</h2>
-                    <ul class="team-list">
-                        <li>Prof Alexandra Andhov</li>
-                        <li>Prof Nick Agar</li>
-                        <li>Prof Ali Knott</li>
-                        <li>A/Prof Stephen Hill</li>
-                        <li>Dr Cassandra Mudgway</li>
-                        <li>Dr Michael Daubs</li>
-                        <li>Dr Olivia J Erdelyi</li>
-                        <li>Dr Ethan Plaut</li>
-                        <li>Dr Andrew Richmond</li>
-                    </ul>
+                <div class="team-section">
+                    <h2 class="team-section-title">Trustworthy Frameworks</h2>
+                    <div class="team-grid">
+                        <div class="team-card">
+                            <h3>Prof Alexandra Andhov</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Prof Nick Agar</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Prof Ali Knott</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>A/Prof Stephen Hill</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Dr Cassandra Mudgway</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Dr Michael Daubs</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Dr Olivia J Erdelyi</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Dr Ethan Plaut</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Dr Andrew Richmond</h3>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="team-section" style="margin-top: 2rem;">
-                    <h2>Trustworthy Systems & Industry</h2>
-                    <ul class="team-list">
-                        <li>Dr Andrew Chen</li>
-                        <li>Chris McGavin</li>
-                        <li>Paul Seiler (Catalyst Cloud)</li>
-                        <li>Deane Sloan (Equinox IT)</li>
-                        <li>Dave Moskovitz</li>
-                        <li>Prof David Eyers</li>
-                        <li>Dr Heitor Gomes</li>
-                    </ul>
+                <div class="team-section">
+                    <h2 class="team-section-title">Trustworthy Systems & Industry</h2>
+                    <div class="team-grid">
+                        <div class="team-card">
+                            <h3>Dr Andrew Chen</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Chris McGavin</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Paul Seiler</h3>
+                            <div class="role">Catalyst Cloud</div>
+                        </div>
+                        <div class="team-card">
+                            <h3>Deane Sloan</h3>
+                            <div class="role">Equinox IT</div>
+                        </div>
+                        <div class="team-card">
+                            <h3>Dave Moskovitz</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Prof David Eyers</h3>
+                        </div>
+                        <div class="team-card">
+                            <h3>Dr Heitor Gomes</h3>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="team-section" style="margin-top: 2rem;">
@@ -95,22 +154,7 @@
             <p>RAISE: Responsible Artificial Intelligence for a Smart Economy</p>
         </div>
     </footer>
-
-    <style>
-        .team-list {
-            margin-top: 1rem;
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 1rem;
-            list-style: none;
-        }
-
-        .team-list li {
-            background: #f8f9fa;
-            padding: 1rem;
-            border-radius: 4px;
-        }
-    </style>
+    <script src="/main.js"></script>
 </body>
 
 </html>
