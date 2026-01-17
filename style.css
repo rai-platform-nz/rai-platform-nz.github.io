@@ -342,6 +342,16 @@ footer a {
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
+    /* margin-left: auto; Removed, relying on space-between now */
+  }
+
+  /* Remove nav from flex flow so space-between works for logo and toggle */
+  nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
   }
 
   .about-grid {
@@ -351,7 +361,6 @@ footer a {
 
   .about-image {
     order: -1;
-    /* Image first on mobile? Or last? Let's keep text first for About, or image for visual break. Let's do default (text first) but user might prefer image first. I'll stick to default col order. */
   }
 
   nav ul {
@@ -387,18 +396,25 @@ footer a {
   }
 
   .hero .container {
-    flex-direction: column-reverse;
-    /* Text on top/bottom? Usually text first on mobile, but here column-reverse puts image on top if image is 2nd child. Let's stick to standard column */
     flex-direction: column;
     text-align: center;
   }
 
-  .hero-image img {
-    max-height: 250px;
+  .hero-content {
     margin-bottom: 2rem;
   }
 
-  .hero h1 {
-    font-size: 2rem;
+  .hero-image img {
+    max-height: 250px;
   }
+}
+
+/* Enhancements: Card Hover Effects */
+.card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
