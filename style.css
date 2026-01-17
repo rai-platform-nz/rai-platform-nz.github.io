@@ -279,10 +279,43 @@ footer a {
   color: var(--color-accent);
 }
 
+/* About Section */
+.about-grid {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
+  }
+
+  .about-grid {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-image {
+    order: -1;
+    /* Image first on mobile? Or last? Let's keep text first for About, or image for visual break. Let's do default (text first) but user might prefer image first. I'll stick to default col order. */
   }
 
   nav ul {
