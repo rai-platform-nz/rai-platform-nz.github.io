@@ -4,6 +4,479 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Economics - RAISE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="icon" type="image/png" href="/images/extracted/img-000.png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">RAISE</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/economics.html">Economics</a></li>
+                    <li><a href="/trust.html">Trust</a></li>
+                    <li><a href="/maori.html">Mātauranga Māori</a></li>
+                    <li><a href="/education.html">Education</a></li>
+                    <li><a href="/team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Economic Benefit</h1>
+                <p class="hero-text" style="font-size: 1.2rem; max-width: 800px; margin-bottom: 2rem;">
+                    AI could add $76b to New Zealand’s GDP by 2038, powering our future high-tech economy. However,
+                    <a href="https://kpmg.com/nz/en/home/insights/2025/05/trust-attitudes-and-use-of-ai.html"
+                        target="_blank">research</a> has shown that these productivity gains are undermined by
+                    unreliable outputs, biased
+                    decisions, and safety concerns (<a
+                        href="https://www.ipsos.com/en-nz/understanding-aotearoa-new-zealand-ipsos-ai-monitor-2025"
+                        target="_blank">Ipsos</a>).
+                </p>
+
+                <h2>Realizing Productivity Gains</h2>
+                <p>
+                    To realise these economic benefits, we need trustworthy AI, giving consumers and businesses the
+                    confidence to engage.
+                    Our vision is to establish NZ as a global leader in responsible AI (RAI) innovation and deployment,
+                    where safety, integrity, and reliability drive our competitive edge.
+                </p>
+
+                <div class="grid">
+                    <div class="card">
+                        <h3>Sovereign AI Capability</h3>
+                        <p>
+                            We aim to build a sovereign large language model (LLM) with <a
+                                href="https://catalystcloud.nz/" target="_blank">Catalyst Cloud</a>, <a
+                                href="https://publicai.network/" target="_blank">Public AI Network</a>, and <a
+                                href="https://metagov.org/" target="_blank">Metagov</a>, ensuring NZ retains control
+                            over its critical AI infrastructure and data.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Future-Ready Workforce</h3>
+                        <p>
+                            Through initiatives like the <a href="https://applieddoctorates.nz/" target="_blank">Applied
+                                Doctorates</a> scheme and subsidised consulting for SMEs, we would upskill NZ's
+                            workforce
+                            and support the commercialisation of responsible AI.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Export Advantage</h3>
+                        <p>A focus on “trust by design” will be a key competitive advantage, enabling our exports to
+                            thrive in international markets with complex regulatory environments.</p>
+                    </div>
+                </div>
+
+                <h2 style="margin-top: 3rem;">Global Market</h2>
+                <p>
+                    The global market for responsible and explainable AI is expanding rapidly. Recent <a
+                        href="https://www.lucintel.com/explainable-ai-market.aspx" target="_blank">estimates</a> project
+                    the explainable AI market alone will exceed US$20 billion by 2030, reflecting demand in sectors such
+                    as healthcare, finance, and government.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>RAISE: Responsible Artificial Intelligence for a Smart Economy</p>
+        </div>
+    </footer>
+    <script src="/main.js"></script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education - RAISE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="icon" type="image/png" href="/images/extracted/img-000.png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">RAISE</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/economics.html">Economics</a></li>
+                    <li><a href="/trust.html">Trust</a></li>
+                    <li><a href="/maori.html">Mātauranga Māori</a></li>
+                    <li><a href="/education.html">Education</a></li>
+                    <li><a href="/team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Investing in People</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                    RAISE will help cultivate the next generation of AI talent, ensuring they are both technically
+                    brilliant and socially and ethically literate.
+                </p>
+
+                <div class="grid">
+                    <div class="card">
+                        <h3>Future-Ready Workforce</h3>
+                        <p>
+                            Graduates will be equipped with foundational, multidisciplinary skills that will be highly
+                            sought after as markets and technology continue to evolve, directly supporting the
+                            government’s goal of building a “future-ready workforce”.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Applied Doctorates</h3>
+                        <p>
+                            There will be a focus on training master’s and doctoral students, including through the
+                            applied doctorates scheme, to develop industry-ready expertise in RAI.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <h3>Curriculum Development</h3>
+                        <p>
+                            RAISE will develop new interdisciplinary postgraduate coursework curricula, engaging with
+                            strategic partners like REANNZ and industry to ensure relevance.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="card" style="margin-top: 2rem;">
+                    <h3>Public Education</h3>
+                    <p>
+                        RAISE will also actively inform and educate the New Zealand public about the safe use of AI,
+                        thereby addressing the knowledge and skills barriers that impede AI uptake.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>RAISE: Responsible Artificial Intelligence for a Smart Economy</p>
+        </div>
+    </footer>
+    <script src="/main.js"></script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAISE - Responsible AI for a Smart Economy</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./lightbox.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap"
+            rel="stylesheet">
+    </noscript>
+    <link rel="icon" type="image/png" href="/images/extracted/img-000.png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">
+                <!-- Using extracted image if appropriate, else text -->
+                RAISE
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/economics.html">Economics</a></li>
+                    <li><a href="/trust.html">Trust</a></li>
+                    <li><a href="/maori.html">Mātauranga Māori</a></li>
+                    <li><a href="/education.html">Education</a></li>
+                    <li><a href="/team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container" style="justify-content: center; text-align: center;">
+                <div class="hero-content" style="max-width: 800px;">
+                    <h1>Responsible Artificial Intelligence for a Smart Economy</h1>
+                    <p>A Vision for Trustworthy AI in Aotearoa New Zealand</p>
+                    <a href="#about" class="btn">Our Mission</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-content">
+                        <h2>The RAISE Vision</h2>
+                        <p>
+                            Responsible Artificial Intelligence for a Smart Economy (RAISE) is an initiative to position
+                            New Zealand at the
+                            forefront of shaping trustworthy and safe AI for everyone. We bring together top academics,
+                            industry experts,
+                            and Māori innovation networks to advocate for technologies that are transparent,
+                            explainable, and operate in
+                            ways people can understand.
+                        </p>
+                        <p style="margin-top: 1rem;">
+                            The coalition and ambition remain stronger than ever.
+                            We continue to work towards a future where AI in Aotearoa is built and used with our highest
+                            values in mind—integrity,
+                            human rights, and transparency.
+                        </p>
+                    </div>
+                    <div class="about-image">
+                        <a href="images/extracted/img-000-1200.webp" class="lightbox-trigger"
+                            aria-label="View full size image">
+                            <img src="images/extracted/img-000-800.webp"
+                                srcset="images/extracted/img-000-400.webp 400w, images/extracted/img-000-800.webp 800w, images/extracted/img-000-1200.webp 1200w"
+                                sizes="(max-width: 768px) 100vw, 50vw" alt="RAISE Concept Art" loading="lazy">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="advocacy" class="section section-bg">
+            <div class="container">
+                <h2>Advocating for Change</h2>
+                <p>
+                    Realizing responsible AI requires more than just technical solutions; it demands robust
+                    governance and
+                    active public engagement. The RAISE team is leading the charge for AI regulation in New
+                    Zealand.
+                </p>
+                <p style="margin-top: 1rem;">
+                    Many of our members are signatories to the open letter calling on the New Zealand Parliament
+                    to lead a
+                    bipartisan effort for risk management-based AI regulation and the establishment of a
+                    national AI oversight body.
+                </p>
+                <a href="https://regulateai.nz/" target="_blank" class="btn" style="margin-top: 1.5rem;">Read
+                    the Open Letter</a>
+
+            </div>
+        </section>
+
+        <section id="pillars" class="section section-bg">
+            <div class="container">
+                <h2>Our Vision</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Trustworthy Technology</h3>
+                        <p>Developing technical advancements in transparency, robustness, explainability, security, and
+                            safety.</p>
+                        <a href="/trust.html">Learn more &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3>Trustworthy Frameworks</h3>
+                        <p>Establishing thought leadership in accountability, ethics, human rights, governance, and
+                            regulation.</p>
+                        <a href="/trust.html">Learn more &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3>Trustworthy Systems</h3>
+                        <p>Building infrastructure and solutions collaboratively with industry and the public sector.
+                        </p>
+                        <a href="/trust.html">Learn more &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Key Pillars</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>Economic Impact</h3>
+                        <p>AI could add $76b to New Zealand’s GDP by 2038. We aim to realize these benefits through
+                            trustworthy innovation.</p>
+                        <a href="/economics.html">Read more</a>
+                    </div>
+                    <div class="card">
+                        <h3>Mātauranga Māori</h3>
+                        <p>Partnering with Vision Mātauranga to develop tools grounded in te ao Māori and create
+                            high-value Indigenous economic opportunities.</p>
+                        <a href="/maori.html">Read more</a>
+                    </div>
+                    <div class="card">
+                        <h3>Investing in People</h3>
+                        <p>Cultivating the next generation of AI talent, ensuring they are both technically brilliant
+                            and socially and ethically literate.</p>
+                        <a href="/education.html">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>RAISE: Responsible Artificial Intelligence for a Smart Economy</p>
+            <p>Contact: Dr Andrew Lensen (andrew.lensen@vuw.ac.nz)</p>
+        </div>
+    </footer>
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-image">
+    </div>
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mātauranga Māori - RAISE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="icon" type="image/png" href="/images/extracted/img-000.png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">RAISE</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/economics.html">Economics</a></li>
+                    <li><a href="/trust.html">Trust</a></li>
+                    <li><a href="/maori.html">Mātauranga Māori</a></li>
+                    <li><a href="/education.html">Education</a></li>
+                    <li><a href="/team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Mātauranga Māori & Indigenous Innovation</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                    For Māori, responsible AI is critically important to the sustainable development of the <a
+                        href="https://www.mbie.govt.nz/assets/te-ohanga-maori-2023-report.pdf" target="_blank">Māori
+                        economy</a>, with wide-ranging benefits for the whole of NZ.
+                </p>
+
+                <div class="grid" style="grid-template-columns: 1fr;">
+                    <div class="card">
+                        <h3>Strategic Partnership</h3>
+                        <p>
+                            Vision Mātauranga is woven into RAISE in partnership with the <strong><a
+                                    href="https://hiringatemahara.nz/" target="_blank">Hiringa Te Mahara</a></strong>
+                            Māori research team, whose expert collaboration spans global indigenous
+                            communities, and <strong><a href="https://tematarau.co.nz/" target="_blank">Te Matarau a
+                                    Māui</a></strong>, a network of Māori businesses keen to
+                            test and trial AI.
+                        </p>
+                        <p style="margin-top: 1rem;">
+                            These networks will help RAISE connect with iwi/hapū authorities, tribal NGOs, and Māori
+                            academics across Aotearoa.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <h3>Indigenous Economic Opportunities</h3>
+                        <p>
+                            We aim to partner with Vision Mātauranga in an AI context to develop tools grounded in te ao
+                            Māori and create high-value Indigenous economic opportunities.
+                        </p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 2rem;">Experts</h3>
+                <ul style="list-style-type: none; margin-top: 1rem;">
+                    <li><strong>Prof Hemi Whaanga</strong></li>
+                    <li><strong>Dr Kirita-Rose Escott</strong></li>
+                    <li><strong>Dr Jesse Pirini</strong> (Executive Chair of Te Matarau a Māui)</li>
+                    <li><strong>Dr Kevin Shedlock</strong></li>
+                    <li>And the wider Hiringa te Mahara team</li>
+                </ul>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>RAISE: Responsible Artificial Intelligence for a Smart Economy</p>
+        </div>
+    </footer>
+    <script src="/main.js"></script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team - RAISE</title>
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet"
@@ -350,9 +823,7 @@
                         We leverage relationships with prominent global researchers such as <a
                             href="https://yoshuabengio.org/" target="_blank">Prof Yoshua Bengio</a>, <a
                             href="https://edwebprofiles.ed.ac.uk/profile/shannon-vallor" target="_blank">Prof Shannon
-                            Vallor</a> (<a href="https://braiduk.org/" target="_blank">BRAID</a>), <a
-                            href="https://vcresearch.berkeley.edu/faculty/stuart-russell" target="_blank">Prof Stuart
-                            Russell</a>,
+                            Vallor</a> (<a href="https://braiduk.org/" target="_blank">BRAID</a>), Prof Stuart Russell,
                         and <a href="https://en.wikipedia.org/wiki/Virginia_Dignum" target="_blank">Prof Virginia
                             Dignum</a>.
                     </p>
@@ -363,22 +834,108 @@
                     </p>
                 </div>
 
-                <div class="team-section" style="margin-top: 2rem;">
-                    <h2>Governance</h2>
-                    <p>
-                        We are establishing a comprehensive governance structure to provide accountability and
-                        oversight:
-                    </p>
-                    <ul style="margin-top: 1rem; padding-left: 1.2rem; list-style-type: none;">
-                        <li style="margin-bottom: 0.5rem;"><strong>Governance Board:</strong> A mix of academic, Māori,
-                            and industry members.</li>
-                        <li style="margin-bottom: 0.5rem;"><strong>Research Board:</strong> International and Vision
-                            Mātauranga experts to provide strategic direction.</li>
-                        <li><strong>Community Advisory Board:</strong> To inform research through engagement with
-                            relevant community groups.</li>
-                    </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>RAISE: Responsible Artificial Intelligence for a Smart Economy</p>
+        </div>
+    </footer>
+    <script src="/main.js"></script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trust - RAISE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    </noscript>
+    <link rel="icon" type="image/png" href="/images/extracted/img-000.png">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="/" class="logo">RAISE</a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/economics.html">Economics</a></li>
+                    <li><a href="/trust.html">Trust</a></li>
+                    <li><a href="/maori.html">Mātauranga Māori</a></li>
+                    <li><a href="/education.html">Education</a></li>
+                    <li><a href="/team.html">Team</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Trustworthy AI</h1>
+                <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                    Appropriate use of AI offers significant economic and other benefits. However, AI innovation and
+                    adoption are hampered by a lack of trust. Building trust demands more than technical sophistication.
+                </p>
+
+                <div class="grid">
+                    <div class="card">
+                        <h3>1. Trustworthy Technology</h3>
+                        <p>Developing technical advancements in transparency, robustness, explainability, security, and
+                            safety.</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.2rem;">
+                            <li>Explainable and verifiable AI</li>
+                            <li>Transparency in medical AI</li>
+                            <li>Targeted GenAI models to mitigate hallucinations</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>2. Trustworthy Frameworks</h3>
+                        <p>Establishing thought leadership in accountability, ethics, human rights, governance, and
+                            regulation.</p>
+                        <ul style="margin-top: 1rem; padding-left: 1.2rem;">
+                            <li>Shaping fit-for-purpose AI governance</li>
+                            <li>Aligning with international best practices (<a
+                                    href="https://www.oecd.org/en/topics/sub-issues/ai-principles.html"
+                                    target="_blank">OECD</a>, <a
+                                    href="https://www.unesco.org/en/artificial-intelligence/recommendation-ethics"
+                                    target="_blank">UNESCO</a>)</li>
+                            <li>Embedding ethical and legal norms</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>3. Trustworthy Systems</h3>
+                        <p>Building infrastructure and solutions collaboratively with industry and the public sector.
+                        </p>
+                        <ul style="margin-top: 1rem; padding-left: 1.2rem;">
+                            <li>Sovereign Large Language Model (LLM)</li>
+                            <li>Privacy-preserving environmental monitoring</li>
+                            <li>Subsidised consulting for SMEs</li>
+                        </ul>
+                    </div>
                 </div>
 
+                <h2 style="margin-top: 3rem;">Examples</h2>
+                <p>
+                    Illustrative examples of potential projects include developing novel methods for explainable and
+                    verifiable AI to achieve transparency in medical AI diagnostic tools, and partnering Vision
+                    Mātauranga in an AI context.
+                </p>
             </div>
         </section>
     </main>
