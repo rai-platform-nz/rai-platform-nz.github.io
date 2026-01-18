@@ -31,48 +31,45 @@ const inlineCss = () => {
         process.exit(1);
     }
 
-    // Find the main CSS file in dist/assets
+    // Find all CSS files in dist/assets
     const assetsDir = path.join(distDir, 'assets');
-    const files = fs.readdirSync(assetsDir);
-    const cssFile = files.find(f => f.startsWith('style-') && f.endsWith('.css'));
-    const lightboxCssFile = 'lightbox.css'; // This is copied to root usually, or assets
-
-    if (!cssFile) {
-        console.error('Main CSS file not found in assets.');
+    if (!fs.existsSync(assetsDir)) {
+        console.error('Assets directory not found.');
         return;
     }
 
-    const cssPath = path.join(assetsDir, cssFile);
-    let cssContent = fs.readFileSync(cssPath, 'utf8');
+    const files = fs.readdirSync(assetsDir);
+    const cssFiles = files.filter(f => f.endsWith('.css'));
 
-    // Also look for lightbox css if it exists in root of dist (since it was a static copy usually? or imported?)
-    // In our case, lightbox.css is likely imported in index.html as a link. 
-    // Vite might optimize it into the bundle or leave it. 
-    // Let's check how it's handled. If we see a link to it, we inline it.
+    if (cssFiles.length === 0) {
+        console.log('No CSS files found in assets.');
+        return;
+    }
 
     const htmlFiles = getHtmlFiles(distDir);
 
     htmlFiles.forEach(htmlPath => {
         let html = fs.readFileSync(htmlPath, 'utf8');
+        let modified = false;
 
-        // Replace main style link
-        // The link will look like <link rel="stylesheet" crossorigin href="/assets/style-....css">
-        // We need a regex that matches the file we found.
+        cssFiles.forEach(cssFile => {
+            const cssPath = path.join(assetsDir, cssFile);
+            const cssContent = fs.readFileSync(cssPath, 'utf8');
 
-        const styleRegex = new RegExp(`<link[^>]*href=["']\/assets\/${cssFile}["'][^>]*>`, 'i');
+            // Regex to find the link tag for this specific CSS file
+            // Handles href="/assets/file.css" or href="./assets/file.css"
+            const styleRegex = new RegExp(`<link[^>]*href=["'][\.\/]*assets\/${cssFile}["'][^>]*>`, 'i');
 
-        if (styleRegex.test(html)) {
-            html = html.replace(styleRegex, `<style>${cssContent}</style>`);
-            console.log(`Inlined CSS in ${path.basename(htmlPath)}`);
+            if (styleRegex.test(html)) {
+                html = html.replace(styleRegex, `<style>${cssContent}</style>`);
+                console.log(`Inlined ${cssFile} in ${path.basename(htmlPath)}`);
+                modified = true;
+            }
+        });
+
+        if (modified) {
+            fs.writeFileSync(htmlPath, html);
         }
-
-        // Also try to find lightbox.css if separate
-        // It might be hashed or raw.
-        // If it was just <link rel="stylesheet" href="./lightbox.css" /> in source, 
-        // Vite mostly bundles it into the main CSS if imported in JS, OR keeps it if just in HTML.
-        // Let's assume we want to inline any CSS found in the assets folder that is linked.
-
-        fs.writeFileSync(htmlPath, html);
     });
 };
 
