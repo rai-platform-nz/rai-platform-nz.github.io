@@ -418,3 +418,12 @@ footer a {
   transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+/* Māori Highlight */
+.team-card.maori-highlight {
+  border-left-color: #e63946; /* Red for distinction */
+  background: linear-gradient(to right, #fff 98%, #fff0f0 100%);
+}
+
+.team-card.maori-highlight h3 {
+  color: #e63946;
+}
