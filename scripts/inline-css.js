@@ -31,7 +31,7 @@ const inlineCss = () => {
         process.exit(1);
     }
 
-    // Find all CSS files in dist/assets
+    // Find all CSS and JS files in dist/assets
     const assetsDir = path.join(distDir, 'assets');
     if (!fs.existsSync(assetsDir)) {
         console.error('Assets directory not found.');
@@ -40,11 +40,7 @@ const inlineCss = () => {
 
     const files = fs.readdirSync(assetsDir);
     const cssFiles = files.filter(f => f.endsWith('.css'));
-
-    if (cssFiles.length === 0) {
-        console.log('No CSS files found in assets.');
-        return;
-    }
+    const jsFiles = files.filter(f => f.startsWith('main-') && f.endsWith('.js'));
 
     const htmlFiles = getHtmlFiles(distDir);
 
@@ -52,17 +48,37 @@ const inlineCss = () => {
         let html = fs.readFileSync(htmlPath, 'utf8');
         let modified = false;
 
+        // Inline CSS
         cssFiles.forEach(cssFile => {
             const cssPath = path.join(assetsDir, cssFile);
             const cssContent = fs.readFileSync(cssPath, 'utf8');
 
-            // Regex to find the link tag for this specific CSS file
-            // Handles href="/assets/file.css" or href="./assets/file.css"
             const styleRegex = new RegExp(`<link[^>]*href=["'][\.\/]*assets\/${cssFile}["'][^>]*>`, 'i');
 
             if (styleRegex.test(html)) {
                 html = html.replace(styleRegex, `<style>${cssContent}</style>`);
                 console.log(`Inlined ${cssFile} in ${path.basename(htmlPath)}`);
+                modified = true;
+            }
+        });
+
+        // Inline JS
+        jsFiles.forEach(jsFile => {
+            const jsPath = path.join(assetsDir, jsFile);
+            const jsContent = fs.readFileSync(jsPath, 'utf8');
+
+            // Regex for module script: <script type="module" crossorigin src="/assets/main-....js"></script>
+            const scriptRegex = new RegExp(`<script[^>]*src=["'][\.\/]*assets\/${jsFile}["'][^>]*>[\s\S]*?<\/script>`, 'i');
+
+            if (scriptRegex.test(html)) {
+                // Inlining module script as classic script (removing type="module") inside <script> tag
+                // But wait, if it uses module features (import/export), it might break if inlined as classic.
+                // However, Vite build output for production usually bundles everything.
+                // Let's check if the content uses imports. 
+                // Usually for a simple main.js it does not have external imports after build.
+                // We'll use <script type="module"> to be safe if it was a module.
+                html = html.replace(scriptRegex, `<script type="module">${jsContent}</script>`);
+                console.log(`Inlined ${jsFile} in ${path.basename(htmlPath)}`);
                 modified = true;
             }
         });
