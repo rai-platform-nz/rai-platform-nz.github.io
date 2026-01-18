@@ -427,3 +427,25 @@ footer a {
 .team-card.maori-highlight h3 {
   color: #e63946;
 }
+
+/* Theme Highlights */
+/* Tech (Blue/Cyan) */
+.team-card.tech-highlight {
+  border-left-color: #219ebc; 
+  background: linear-gradient(to right, #fff 98%, #f0f8ff 100%);
+}
+.team-card.tech-highlight h3 { color: #023047; } /* Darker contrast */
+
+/* Frameworks (Purple) */
+.team-card.frameworks-highlight {
+  border-left-color: #8338ec;
+  background: linear-gradient(to right, #fff 98%, #f8f0ff 100%);
+}
+.team-card.frameworks-highlight h3 { color: #5a189a; }
+
+/* Systems & Industry (Orange) */
+.team-card.systems-highlight {
+  border-left-color: #fb8500;
+  background: linear-gradient(to right, #fff 98%, #fff8f0 100%);
+}
+.team-card.systems-highlight h3 { color: #c25b00; }
