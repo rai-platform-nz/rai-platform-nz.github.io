@@ -200,14 +200,14 @@ nav a:hover {
 /* Team Grid */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .team-card {
   background: white;
-  padding: 2rem;
+  padding: 1.25rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   border-left: 4px solid var(--color-secondary);
@@ -224,19 +224,20 @@ nav a:hover {
 }
 
 .team-photo {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   background-color: #f1f5f9;
   border: 3px solid #e2e8f0;
 }
 
 .team-card h3 {
   color: var(--color-primary);
-  margin-bottom: 0.25rem;
-  font-size: 1.25rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+  line-height: 1.2;
 }
 
 .team-card .role {
@@ -248,9 +249,9 @@ nav a:hover {
 
 .team-card .affiliation {
   color: #666;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   font-style: italic;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
   min-height: 1.2em;
   /* align cards even if no affiliation */
 }
