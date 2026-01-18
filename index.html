@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RAISE - Responsible AI for a Smart Economy</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./lightbox.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -73,7 +74,12 @@
                         </p>
                     </div>
                     <div class="about-image">
-                        <img src="images/extracted/img-000.png" alt="RAISE Concept Art" loading="lazy">
+                        <a href="images/extracted/img-000-1200.webp" class="lightbox-trigger"
+                            aria-label="View full size image">
+                            <img src="images/extracted/img-000-800.webp"
+                                srcset="images/extracted/img-000-400.webp 400w, images/extracted/img-000-800.webp 800w, images/extracted/img-000-1200.webp 1200w"
+                                sizes="(max-width: 768px) 100vw, 50vw" alt="RAISE Concept Art" loading="lazy">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -170,6 +176,12 @@
             <p>Contact: Dr Andrew Lensen (andrew.lensen@vuw.ac.nz)</p>
         </div>
     </footer>
+    <!-- Lightbox Modal -->
+    <div id="lightbox-modal" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-image">
+    </div>
+
     <script src="/main.js"></script>
 </body>
 
