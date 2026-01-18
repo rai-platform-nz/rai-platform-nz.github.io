@@ -2,11 +2,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Mobile Navigation Toggle
     const navToggle = document.querySelector('.nav-toggle');
-    const nav = document.querySelector('nav');
+    const navMenu = document.querySelector('nav ul');
 
-    if (navToggle && nav) {
+    if (navToggle && navMenu) {
         navToggle.addEventListener('click', () => {
-            nav.classList.toggle('active');
+            navMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
         });
     }
