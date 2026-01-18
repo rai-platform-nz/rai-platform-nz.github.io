@@ -71,14 +71,19 @@ const inlineCss = () => {
             const scriptRegex = new RegExp(`<script[^>]*src=["'][\.\/]*assets\/${jsFile}["'][^>]*>[\s\S]*?<\/script>`, 'i');
 
             if (scriptRegex.test(html)) {
-                // Inlining module script as classic script (removing type="module") inside <script> tag
-                // But wait, if it uses module features (import/export), it might break if inlined as classic.
-                // However, Vite build output for production usually bundles everything.
-                // Let's check if the content uses imports. 
-                // Usually for a simple main.js it does not have external imports after build.
-                // We'll use <script type="module"> to be safe if it was a module.
-                html = html.replace(scriptRegex, `<script type="module">${jsContent}</script>`);
-                console.log(`Inlined ${jsFile} in ${path.basename(htmlPath)}`);
+                // Remove the original script tag from head/wherever
+                html = html.replace(scriptRegex, '');
+
+                // Append inline script to end of body
+                // Wrap in IIFE to be safe since we are removing type="module"
+                const inlineScript = `<script>(function(){${jsContent}})();</script>`;
+                if (html.includes('</body>')) {
+                    html = html.replace('</body>', `${inlineScript}</body>`);
+                } else {
+                    html += inlineScript;
+                }
+
+                console.log(`Inlined ${jsFile} at end of body in ${path.basename(htmlPath)}`);
                 modified = true;
             }
         });
